@@ -42,9 +42,12 @@ export class BlogComponent {
   pintarNoticias() {
     let html = ``;
 
-    this.listadoNoticias.forEach((noticias) => {
-      html += `<h1>${noticias.titulo}</h1><img src="${noticias.foto}"</img><p>${noticias.cuerpo}</p><h3>${noticias.fecha}</h3>`;
-    });
+    this.listadoNoticias.reverse().forEach((noticias) => {
+      html += `<h1>${noticias.titulo}</h1><img src="${noticias.foto}"</img><p>${noticias.cuerpo}</p><h3>${noticias.fecha}</h3><hr>`;
+    }
+    
+  );
+   
     return html;
   }
 }
