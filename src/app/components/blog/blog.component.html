@@ -1,7 +1,11 @@
 <div>
-    <input type="text" placeholder="introduce el titulo">
-<input type="text" placeholder="introduce la url de la foto">
-<input type="text" placeholder="introduce el cuerpo de la noticia">
-<input type="date" placeholder="introduce la fecha de la publicación">
-<button>PUBLICAR</button>
+  <input type="text" placeholder="introduce el titulo" [(ngModel)]="noticias.titulo"/>
+  <input type="text" placeholder="introduce la url de la foto" [(ngModel)]="noticias.foto" />
+  <input type="text" placeholder="introduce el cuerpo de la noticia" [(ngModel)]="noticias.cuerpo"/>
+  <input type="date" placeholder="introduce la fecha de la publicación" [(ngModel)]="noticias.fecha" />
+  <button (click)="publicarNoticia()">PUBLICAR</button>
 </div>
+
+
+<hr>
+<ul [innerHTML]="pintarNoticias()"></ul>
