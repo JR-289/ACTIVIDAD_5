@@ -8,4 +8,14 @@ import { Component } from '@angular/core';
 })
 export class BlogComponent {
 
+noticias: any = {
+  titulo: "",
+  foto: "",
+  cuerpo: "",
+  fecha: ""
+
+}
+
+listadoNoticias: any[] = []
+
 }
