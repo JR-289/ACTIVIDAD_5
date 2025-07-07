@@ -4,3 +4,15 @@ body {
   margin: 0;
   
 }
+
+h3 {
+    color: green;
+}
+
+.noticias img{
+  width: 500px;
+  height: max-content;
+  object-fit: cover;
+  
+
+}
