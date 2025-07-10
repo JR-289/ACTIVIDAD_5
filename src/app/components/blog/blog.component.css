@@ -1,0 +1,97 @@
+.blog {
+  display: grid;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 40px;
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .blog {
+    display: flex;
+  }
+}
+
+.formularioDeNoticias {
+  display: grid;
+  padding: 10px;
+  margin-right: 20px;
+}
+
+@media (min-width: 768px) {
+  .formularioDeNoticias {
+    flex-basis: 25%;
+    max-height: 65vh;
+  }
+}
+
+.cajaDeNoticias {
+  padding: 10px;
+  margin: 10px;
+}
+
+@media (min-width: 768px) {
+  .cajaDeNoticias {
+    flex-basis: 75%;
+
+  }
+}
+
+.noticias {
+  padding-right: 20px;
+  padding-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+  .noticias {
+    height: 80vh;
+    overflow-y: scroll;
+  }
+}
+
+.formularioDeNoticias input[type="text"],
+.formularioDeNoticias input[type="date"],
+.formularioDeNoticias textarea {
+  width: auto;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  box-shadow: 5px 0px green;
+  font-size: 1em;
+}
+
+.formularioDeNoticias textarea {
+  font-family: sans-serif;
+  width: auto;
+  height: 10vh;
+  resize: none;
+  vertical-align: top;
+  text-align: justify;
+}
+
+@media (min-width: 768px) {
+  .formularioDeNoticias textarea {
+    height: 50vh;
+  }
+}
+
+.boton-publicar {
+  width: max-content;
+  background-color: #075e0d;
+  color: white;
+  border: none;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid rgb(0, 0, 0);
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.boton-publicar:hover {
+  background-color: white;
+  color: #075e0d;
+}

@@ -1,1 +1,41 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  font-family:sans-serif;
+  margin: 0;
+  
+}
+
+h1 {
+  color: green;
+  font-size: 1.5rem;
+}
+
+h4 {
+    color: green;
+}
+
+.noticias img{
+  width: 500px;
+  height: max-content;
+  object-fit: cover;
+  
+}
+@media (min-width: 768px) {
+  .noticias img{
+    width: 600px;
+  }
+}
+
+
+p {
+  font-size: 1.2rem;
+  text-align: justify;
+  
+}
+
+hr {
+border: 2px solid green;
+
+
+
+}

@@ -1,0 +1,20 @@
+<section class ="blog">
+
+  
+<div class ="formularioDeNoticias">
+  <h1>Carga tu noticia...</h1>
+  <label for="titulo">Introduce el titulo:</label><input id="titulo" type="text" placeholder="Introduce el titulo" [(ngModel)]="noticias.titulo"/>
+  <label for="foto">Introduce la URL de la foto:</label><input id="foto" type="text" placeholder="Introduce la url de la foto" [(ngModel)]="noticias.foto" />
+  <label for="textarea">Introduce el cuerpo de la noticia:</label><textarea type="textarea" placeholder="Introduce el cuerpo de la noticia"[(ngModel)]="noticias.cuerpo"></textarea>
+  <label for="fecha">Introduce la fecha de publicación:</label><input id="fecha" type="date" placeholder="Introduce la fecha de la publicación" [(ngModel)]="noticias.fecha" />
+  <button class ="boton-publicar" (click)="publicarNoticia()">PUBLICAR</button>
+</div>
+
+
+<div class="cajaDeNoticias" >
+    <h1>Últimas noticias...</h1>
+    <hr>
+    <div class="noticias"[innerHTML]="pintarNoticias()"></div>
+</div>
+
+</section>
