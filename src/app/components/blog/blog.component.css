@@ -1,75 +1,85 @@
-
 .blog {
-    display: flex;
-    max-width: 1440px;
+  display: grid;
+  max-width: 1440px;
   margin: 0 auto;
   padding: 40px;
   gap: 20px;
-
 }
 
+@media (min-width: 768px) {
+  .blog {
+    display: flex;
+  }
+}
 
 .formularioDeNoticias {
-   
+  display: grid;
+  padding: 10px;
+  margin-right: 20px;
+}
+
+@media (min-width: 768px) {
+  .formularioDeNoticias {
     flex-basis: 25%;
-    display: grid;
-    padding: 10px;
-    margin-right: 20px;
     max-height: 65vh;
-
-
+  }
 }
 
 .cajaDeNoticias {
+  padding: 10px;
+  margin: 10px;
+}
+
+@media (min-width: 768px) {
+  .cajaDeNoticias {
     flex-basis: 75%;
-    padding: 10px;
-    margin: 10px;
-    
-    
-   
+
+  }
 }
 
 .noticias {
-    
-    padding-bottom: 10px;
-      height: 80vh;
-    overflow-y: scroll;
-    padding-right: 20px;
-
+  padding-right: 20px;
+  padding-bottom: 10px;
 }
 
-
+@media (min-width: 768px) {
+  .noticias {
+    height: 80vh;
+    overflow-y: scroll;
+  }
+}
 
 .formularioDeNoticias input[type="text"],
 .formularioDeNoticias input[type="date"],
-.formularioDeNoticias textarea{
-  width: 100%;
+.formularioDeNoticias textarea {
+  width: auto;
   padding: 10px;
-  margin-top:10px;
+  margin-top: 10px;
   margin-bottom: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
   box-sizing: border-box;
+  box-shadow: 5px 0px green;
   font-size: 1em;
 }
 
-.formularioDeNoticias textarea{
-    font-family: sans-serif;
-    width: 100%;
-    height: 50vh;
-    resize: none;
-    vertical-align: top;
-   text-align: justify;
-    
-
+.formularioDeNoticias textarea {
+  font-family: sans-serif;
+  width: auto;
+  height: 10vh;
+  resize: none;
+  vertical-align: top;
+  text-align: justify;
 }
 
-
+@media (min-width: 768px) {
+  .formularioDeNoticias textarea {
+    height: 50vh;
+  }
+}
 
 .boton-publicar {
-
-    
-    width: max-content;
+  width: max-content;
   background-color: #075e0d;
   color: white;
   border: none;
@@ -82,7 +92,6 @@
 }
 
 .boton-publicar:hover {
-    background-color: white;
-    color:#075e0d;
-    transform: translateY(-1px);
+  background-color: white;
+  color: #075e0d;
 }

@@ -41,13 +41,9 @@ export class BlogComponent {
 
   pintarNoticias() {
     let html = ``;
-
-    
-
     this.listadoNoticias.forEach((noticias) => {
       html += `<h1>${noticias.titulo}</h1><img src="${noticias.foto}" alt=""</img><p>${noticias.cuerpo}</p><h4>Fecha de publicación: ${noticias.fecha}</h3><hr>`;
     }
-    
   );
     return html;
   }
