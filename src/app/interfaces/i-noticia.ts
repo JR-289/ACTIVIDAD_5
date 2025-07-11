@@ -1,4 +1,4 @@
-export interface INoticias {
+export interface INoticia {
     titulo : string
     foto : string
     cuerpo : string

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { INoticias } from '../../interfaces/i-noticias';
+import { INoticia } from '../../interfaces/i-noticia';
 import { FormsModule } from '@angular/forms';
 
 @Component({
@@ -9,14 +9,14 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './blog.component.css',
 })
 export class BlogComponent {
-  noticias: INoticias = {
+  noticias: INoticia = {
     titulo: '',
     foto: '',
     cuerpo: '',
     fecha: '',
   };
 
-  listadoNoticias: INoticias[] = [
+  listadoNoticias: INoticia[] = [
   
     { titulo: "El Racing inicia la temporada 2025/26 ante el Club Deportivo Castellón en Los Campos de Sport",
       foto : "https://statics-maker.llt-services.com/rac/images/2025/07/01/xlarge-wp/40026b6a-2d79-43c0-be17-cbc4d2a67c91-574.webp",
